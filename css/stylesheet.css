@@ -1,1 +1,88 @@
 /*Dit is de CSS stylesheet*/
+
+
+
+
+.hgologo {
+	width: 100px;
+	margin: 0 auto;
+	position: fixed;
+}
+
+#logo {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.container {
+	background-color: #FFF;
+}
+
+.story-container {
+
+}
+
+#navigation {
+	position: fixed;
+}
+
+#navigation li{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20pt;
+	font-weight: 200;
+	text-align: center;
+	list-style: none;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	border-bottom: 1px solid #E6E6E6;
+
+}
+
+#navigation a{
+	color: #262626;
+}
+
+.content {
+	padding: 63px;
+}
+
+
+
+p {
+	font-family: 'Droid Serif', serif; 
+	font-size: 16pt;
+	color: #262626;
+}
+
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+blockquote {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 22pt;
+}
+
+/* ///// STORIES ////// */
+
+.introductie {
+	background-color: #F2F2F2;
+}
+
+.heden {
+	background-color: #F2F2F2;
+}

@@ -58,8 +58,8 @@ body {
   font-size: 100%; }
 
 body {
-  background: #fff;
-  color: #222;
+  background: #FFF;
+  color: #262626;
   cursor: auto;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -3866,6 +3866,7 @@ abbr {
     border-bottom: 1px dotted #DDDDDD; }
 
 /* Blockquotes */
+/*
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
@@ -3883,7 +3884,8 @@ blockquote {
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #6f6f6f; } 
+  */
 
 /* Microformats */
 .vcard {
