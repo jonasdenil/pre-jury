@@ -11,7 +11,12 @@
 
 }
 
-
+/* Reset de padding in de columns */
+/*.columns {
+	padding-left:0; !important
+	padding-right:0; !important
+}
+*/
 
 
 /* ///// Navigation ///// */
@@ -50,6 +55,7 @@ p {
 	font-family: 'Droid Serif', serif; 
 	font-size: 16pt;
 	color: #262626;
+	padding-bottom: 10px;
 }
 
 /* h1 zijn hoofdtitels */
@@ -57,13 +63,16 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 800;
 	font-size: 30pt;
+	text-align: center;
 }
 
 /* h2 wordt gebruikt voor de overlay-titels over foto's */
 h2 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 800;
+	color: #FFF;
 	font-size: 30pt;
+	text-align: center;
 }
 
 /* h3 wordt gebruikt als ondertitels */
@@ -94,6 +103,16 @@ blockquote span{
 	font-size: 16pt;
 }
 
+hr.zwart{
+	border: 1px solid #262626;
+	width: 100px;
+}
+
+hr.wit{
+	border: 1px solid #FFF;
+	width: 100px;
+}
+
 
 
 
@@ -104,14 +123,27 @@ blockquote span{
 	padding: 63px;
 }
 
-.top-image {
+
+
+.introductie-image {
 	width: 750px;
 	height: 400px;
-	background-image: url("img/introductie.jpg");
+	background-image: url(http://placekitten.com/750/400);
+}
+
+.heden-image {
+	width: 750px;
+	height: 400px;
+	background-image: url(http://placekitten.com/750/400);
+	position: relative;
 }
 
 .introductie {
 	background-color: #F2F2F2;
+}
+
+.title {
+	padding-bottom: 40px;
 }
 
 .wo-ii-uitleg {
