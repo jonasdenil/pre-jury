@@ -36,8 +36,8 @@
 	color: #262626;
 }
 
-#logo-img {
-	width: 70px;
+#navigation li img{
+	max-width: 90px;
 }
 
 
