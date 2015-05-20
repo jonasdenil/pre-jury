@@ -1,18 +1,7 @@
 /*Dit is de CSS stylesheet*/
 
 
-
-
-.hgologo {
-	width: 100px;
-	margin: 0 auto;
-	position: fixed;
-}
-
-#logo {
-	width: 100px;
-	margin: 0 auto;
-}
+/* ///// Containers ///// */
 
 .container {
 	background-color: #FFF;
@@ -21,6 +10,11 @@
 .story-container {
 
 }
+
+
+
+
+/* ///// Navigation ///// */
 
 #navigation {
 	position: fixed;
@@ -42,11 +36,11 @@
 	color: #262626;
 }
 
-.content {
-	padding: 63px;
-}
 
 
+
+
+/* ///// Typografie ///// */
 
 p {
 	font-family: 'Droid Serif', serif; 
@@ -54,17 +48,32 @@ p {
 	color: #262626;
 }
 
-
+/* h1 zijn hoofdtitels */
 h1 {
-
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
+	font-size: 30pt;
 }
 
+/* h2 wordt gebruikt voor de overlay-titels over foto's */
 h2 {
-
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
+	font-size: 30pt;
 }
 
+/* h3 wordt gebruikt als ondertitels */
 h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
+	font-size: 22pt;
+}
 
+/* <span> wordt gebruikt voor de magere bijzin onder te tussentitel, zonder nieuwe h bij te maken */
+h3 span{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 22pt;
 }
 
 h4 {
@@ -75,14 +84,41 @@ blockquote {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
 	font-size: 22pt;
+	margin-bottom: 40px;
+}
+blockquote span{
+	font-size: 16pt;
 }
 
-/* ///// STORIES ////// */
+
+
+
+/* ///// Stories ////// */
+
+
+.content {
+	padding: 63px;
+}
+
+.top-image {
+	width: 750px;
+	height: 400px;
+	background-image: url("img/introductie.jpg");
+}
 
 .introductie {
 	background-color: #F2F2F2;
 }
 
+.wo-ii-uitleg {
+	
+}
+
 .heden {
 	background-color: #F2F2F2;
 }
+
+
+
+
+
