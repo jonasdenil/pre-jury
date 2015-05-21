@@ -76,6 +76,10 @@ section {
 	max-width: 90px;
 }
 
+ul, li {
+	margin:0;
+}
+
 /* ///// Typografie ///// */
 
 p {
