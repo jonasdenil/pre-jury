@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pre-Jury</title>
-    <meta name="description" content="anton, 2014">
+    <meta name="description" content="Onze koele pre-jury!">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
@@ -29,11 +29,11 @@
 
 
 
-    <div class="container row">
+    <div class="container row" id="container">
 
       <!-- ////////// NAVIGATION ////////// -->
 
-      <div class="navigation-container small-2 large-2 columns">
+      <div class="navigation-container small-2 large-2 columns" id="navigation-container">
         
         <nav id="navigation" class="navigation menu" role="navigation">
           <ul class="sections menus">
@@ -54,15 +54,11 @@
         </nav>
       </div>
 
-      <div class="small-10 large-10 columns">
-        &nbsp;
-      </div>
-
 
 
         <!-- ////////// STORIES ////////// -->
 
-        <div class="story-container stories small-9 columns">
+        <div class="story-container stories small-9 columns" id="story-container">
 
           <div class="row">
 
@@ -233,6 +229,13 @@ viewBox="0 0 640 480" enable-background="new 0 0 640 480" xml:space="preserve">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     <script>
       $(document).foundation();
+
+      $(document).ready(function () {
+        var containerWidth = $('#container').width();
+        var storiesContainerWidth = $('#story-container').width();
+        var navigationContainerWidth = containerWidth - storiesContainerWidth;
+        $('#navigation-container').css('width',navigationContainerWidth);
+      });
 
       $(function() {
           $('a[href*=#]:not([href=#])').click(function() {
