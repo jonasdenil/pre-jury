@@ -40,8 +40,16 @@ section {
 
 /* ///// Navigation ///// */
 
+.navigation-container {
+	position:fixed;
+}
+
 #navigation {
-	position: fixed;
+}
+
+.logo {
+	margin-top:30px;
+	width:50%;
 }
 
 #navigation li {
@@ -75,6 +83,18 @@ p {
 	font-size: 16px;
 	color: #262626;
 	padding-bottom: 10px;
+}
+
+a,
+a:active, 
+a:link,
+a:visited {
+	color:#1492ED;
+	transition: opacity .1s ease, border .1s ease, font-weight .1s ease;
+}
+
+a:hover {
+	opacity:.5;
 }
 
 /* h1 zijn hoofdtitels */
@@ -135,7 +155,9 @@ hr.wit {
 	margin-top: 18px;
 }
 
-
+strong {
+	font-weight:700;
+}
 
 
 /* ///// Stories ////// */
@@ -200,6 +222,25 @@ section.wo-ii {
 	padding-bottom: 30px;
 }
 
+.cartoon {
+	max-width:70%;
+	max-height:500px;
+	margin:15px auto;
+	display:block;
+}
+
+.cartoon.pc-img {
+	margin-top:35px;
+}
+
+.caption {
+	font-size:14px;
+	font-style: italic;
+	width:70%;
+	margin:0 auto 50px auto;
+	text-align: center;
+
+}
 
 /* ///// Footer ///// */
 
@@ -208,13 +249,27 @@ section.footer {
 	height: 100vh;
 }
 
+section.footer svg {
+	margin: 3% auto 0 auto;
+	width:40%;
+	display:block;
+}
+
 section.footer p {
 	color:#AAA;
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight:100;
-	width:80%;
+	width:65%;
 	margin:0 auto;
+}
+
+section.footer p.copy {
+	opacity:.5;
+}
+
+footer.logo-bottom {
+	display:block;
 }
 
 /* ///// Tijdslijn ///// */
