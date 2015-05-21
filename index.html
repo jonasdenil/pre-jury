@@ -38,12 +38,12 @@
         <nav id="navigation" class="navigation menu" role="navigation">
           <ul class="sections menus">
             <li><img src="http://snerkone.be/logo.png" id="logo-img" alt="HGO logo"></li>
-            <li><a href="#introductie" title="introductie">introductie</a></li>
-            <li><a href="#wo-ii" title="wo-ii">wo-ii</a></li>
-            <li><a href="#heden" title="heden">heden</a></li>
-            <li><a href="#probleem" title="probleem">probleem</a></li>
-            <li><a href="#oplossing" title="oplossing">oplossing</a></li>
-            <li><a href="#benchmarking" title="benchmarking">benchmarking</a></li>
+            <li><a id="introductie-nav" href="#introductie" title="introductie">introductie</a></li>
+            <li><a id="wo-ii-nav" href="#wo-ii" title="wo-ii">wo-ii</a></li>
+            <li><a id="heden-nav" href="#heden" title="heden">heden</a></li>
+            <li><a id="probleem-nav" href="#probleem" title="probleem">probleem</a></li>
+            <li><a id="oplossing-nav" href="#oplossing" title="oplossing">oplossing</a></li>
+            <li><a id="benchmarking-nav" href="#benchmarking" title="benchmarking">benchmarking</a></li>
           </ul>
         </nav>
       </div>
@@ -198,8 +198,39 @@
       </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     <script>
       $(document).foundation();
+
+      $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 700);
+              return false;
+              }; // close if
+            }; // close if
+          }); // close click.(function)
+      }); // close function()
+
+      /* $(document).ready(function(){
+          var waypoints = $('#wo-ii').waypoint(function(direction) {
+            if (direction === "down") {
+              $("#wo-ii-nav").css('color','#DD0');
+              $("#wo-ii-nav").css('font-weight','900');
+            };
+          });
+      }); */
+
+      $('[id$=nav]').waypoint(function(direction) {
+        $('#wo-ii-nav').css('font-weight','900');
+      }, {
+        offset: '10%'
+      });
     </script>
   </body>
 </html>
