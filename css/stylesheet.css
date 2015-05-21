@@ -3,10 +3,6 @@
 
 /* ///// Containers ///// */
 
-.container {
-	background-color: #FFF;
-}
-
 .story-container {
 
 }
@@ -119,21 +115,29 @@ hr.wit{
 /* ///// Stories ////// */
 
 
+section.story {
+	padding:0;
+}
+
+.story-container {
+	padding:0;
+}
+
 .content {
 	padding: 63px;
 }
 
-
-
-.introductie-image {
+.top-image {
 	width: 750px;
 	height: 400px;
+	padding-top:150px;
+}
+
+.introductie-image {
 	background-image: url(http://placekitten.com/750/400);
 }
 
 .heden-image {
-	width: 750px;
-	height: 400px;
 	background-image: url(http://placekitten.com/750/400);
 	position: relative;
 }
