@@ -226,11 +226,50 @@
           });
       }); */
 
-      $('[id$=nav]').waypoint(function(direction) {
+      $('#introductie').waypoint(function(direction) {
+        $('[id$=nav]').css('font-weight','200'),
+        $('#introductie-nav').css('font-weight','900');
+      }, {
+        offset: '-20%'
+      });
+
+      $('#wo-ii').waypoint(function(direction) {
+        $('[id$=nav]').css('font-weight','200'),
         $('#wo-ii-nav').css('font-weight','900');
       }, {
         offset: '10%'
       });
+
+      $('#heden').waypoint(function(direction) {
+        $('[id$=nav]').css('font-weight','200'),
+        $('#heden-nav').css('font-weight','900');
+      }, {
+        offset: '10%'
+      });
+
+      $('#probleem').waypoint(function(direction) {
+        $('[id$=nav]').css('font-weight','200'),
+        $('#probleem-nav').css('font-weight','900');
+      }, {
+        offset: '10%'
+      });
+
+      $('#oplossing').waypoint(function(direction) {
+        $('[id$=nav]').css('font-weight','200'),
+        $('#oplossing-nav').css('font-weight','900');
+      }, {
+        offset: '10%'
+      });
+
+      $('#benchmarking').waypoint(function(direction) {
+        $('[id$=nav]').css('font-weight','200'),
+        $('#benchmarking-nav').css('font-weight','900');
+      }, {
+        offset: '30%'
+      });
+
+      $('#introductie-nav').css('font-weight','900');
+
     </script>
   </body>
 </html>
