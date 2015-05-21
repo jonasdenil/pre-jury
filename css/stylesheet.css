@@ -5,30 +5,31 @@ body {
 	background-color: #262626;
 }
 
-
-
-/* ///// Containers 800px ///// */
-
-@media (max-width: 800px) {
-
 .container {
-	width: 768px;
 	background-color: #FFF;
 }
 
+@media (max-width: 1024px) {
+	.container {
+		width: 768px;
+		background-color: #FFF;
+	}
 }
 
-@media (min-width: 801px) {
-.container {
-	width: 1024px;
-	background-color: #FFF;
-}
+@media (min-width: 1024px) {
+	.container {
+		width: 1024px;
+		background-color: #FFF;
+	}
 }
 
 section {
 	background-color: #FFF;
 }
 
+.row.row {
+	margin:0 auto;
+}
 /* Reset de padding in de columns */
 /*.columns {
 	padding-left:0; !important
@@ -43,19 +44,23 @@ section {
 	position: fixed;
 }
 
-#navigation li{
+#navigation li {
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 200;
 	text-align: center;
 	list-style: none;
-	padding-top: 23px;
-	padding-bottom: 23px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	border-bottom: 1px solid #E6E6E6;
-
 }
 
-#navigation a{
+#navigation li:first-of-type,
+#navigation li:last-of-type {
+	border:0;
+}
+
+#navigation a {
 	color: #262626;
 }
 
@@ -98,7 +103,7 @@ h3 {
 }
 
 /* <span> wordt gebruikt voor de magere bijzin onder te tussentitel, zonder nieuwe h bij te maken */
-h3 span{
+h3 span {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
 	font-size: 22px;
@@ -114,17 +119,17 @@ blockquote {
 	font-size: 22px;
 	margin-bottom: 40px;
 }
-blockquote span{
+blockquote span {
 	font-size: 16px;
 }
 
-hr.zwart{
+hr.zwart {
 	border: 1.5px solid #262626;
 	width: 86px;
 	margin-top: 18px;
 }
 
-hr.wit{
+hr.wit {
 	border: 1.5px solid #FFF;
 	width: 86px;
 	margin-top: 18px;
@@ -196,8 +201,20 @@ section.wo-ii {
 }
 
 
+/* ///// Footer ///// */
 
+section.footer {
+	background-color:#444;
+}
 
+section.footer p {
+	color:#AAA;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight:100;
+	width:80%;
+	margin:0 auto;
+}
 
 /* ///// Tijdslijn ///// */
 
@@ -209,7 +226,6 @@ section.wo-ii {
 	min-height: 100px;
 	margin-bottom: 25px;
 	margin-top: 10px;
-
 }
 
 .tijdslijn-kleur:first-of-type {
