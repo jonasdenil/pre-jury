@@ -60,7 +60,7 @@
 
             <section class="introductie grey story small-12 columns" id="introductie">
               
-              <div class="top-image introductie-image">
+              <div class="top-image introductie-image" id="introductie-image">
                 <h2>Introductie</h2>
                 <hr class="wit">
               </div>
@@ -85,7 +85,7 @@
                   <div class="small-6 large-6 columns tijdslijn tijdslijn-kleur">&nbsp;</div>
                   <div class="small-6 large-6 columns tijdslijn">&nbsp;</div>
                 </div>
-                <div class="title wo-ii-title">
+                <div class="title wo-ii-title" id="wo-ii-title">
                   <h1>Na Wereldoorlog II</h1>
                   <hr class="zwart">
                 </div>
@@ -124,7 +124,7 @@
   
             <section class="heden grey story small-12 columns" id="heden">
               
-              <div class="top-image heden-image">
+              <div class="top-image heden-image" id="heden-image">
               <h2>Heden</h2>
               <hr class="wit">
               </div>
@@ -153,7 +153,7 @@
             <section class="probleem story small-12 columns" id="probleem">
               <div class="content story-content probleem-content">
   
-                <div class="title probleem-title">
+                <div class="title probleem-title" id="probleem-title">
                   <h1>Het probleem</h1>
                   <hr class="zwart">
                 </div>
@@ -170,7 +170,7 @@
   
             <section class="oplossing grey story small-12 columns" id="oplossing">
               
-              <div class="top-image oplossing-image">
+              <div class="top-image oplossing-image" id="oplossing-image">
                   <h2>De oplossing</h2>
                   <hr class="wit">
               </div>
@@ -179,7 +179,9 @@
                 
                 <div class="uitleg oplossing-uitleg">
                   <h3>Subtitel</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem itaque temporibus   praesentium dolorem, nobis autem enim suscipit. Tenetur velit rerum iusto aliquid quo   repellendus, facere ab, beatae ipsum, officia, totam!</p>
+                  <p>Daarom komt Het Grote Ontwerp er. Het is een online platform in de vorm van een website, dat algemeen toepasbaar op alle grote Vlaamse steden. Het platform laat zowel de gemeente als de bewoners samen brainstormen over de toekomst van hun stad. Het centraliseert communicatie en zet burgers aan tot participeren aan de stad van morgen.</p>
+
+                  <p>Via een handig systeem van categorieën kan je op zoek gaan naar interessante ideeën van je buren. Er ontstaat interactie door het plukken en planten (inspiratie opdoen en herwerken) van andermans ideeën. Hoe meer interactie een idee teweeg brengt, hoe beter! Want alleen zo kan de beste toekomst voor de stad bepaald worden.</p>
                 </div>
   
               </div>
@@ -188,7 +190,7 @@
             <section class="benchmarking story small-12 columns" id="benchmarking">
               <div class="content story-content benchmarking-content">
   
-                <div class="title benchmarking-title">
+                <div class="title benchmarking-title" id="benchmarking-title">
                   <h1>Benchmarks</h1>
                   <hr class="zwart">
                 </div>
@@ -196,12 +198,29 @@
                 <div class="uitleg benchmarking-uitleg">
                   <h3>Subtitel</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem itaque temporibus   praesentium dolorem, nobis autem enim suscipit. Tenetur velit rerum iusto aliquid quo   repellendus, facere ab, beatae ipsum, officia, totam!</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem itaque temporibus   praesentium dolorem, nobis autem enim suscipit. Tenetur velit rerum iusto aliquid quo   repellendus, facere ab, beatae ipsum, officia, totam!</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem itaque temporibus   praesentium dolorem, nobis autem enim suscipit. Tenetur velit rerum iusto aliquid quo   repellendus, facere ab, beatae ipsum, officia, totam!</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem itaque temporibus   praesentium dolorem, nobis autem enim suscipit. Tenetur velit rerum iusto aliquid quo   repellendus, facere ab, beatae ipsum, officia, totam!</p>
                 </div>
   
               </div>
             </section>
 
+            <section class="footer story small-12 columns" id="footer">
+              <div class="content story-content footer-content">
+                
+                <p>Het Grote Ontwerp is een project dat nog maar in zijn kinderschoenen staat. Het werd opgestart door de jongelingen <a href="http://snerkone.be/" target="_blank">Jonas Denil</a> en <a href="http://antonlecock.be/" target="_blank">Anton Lecock</a> in het kader van hun afstudeerproject aan de afdeling Grafisch Ontwerp en Information Design van LUCA – School of Arts, Campus Sint-Lukas Brussel.</p>
+
+                <p style="opacity:.5">&copy; 2015</p>
+
+              </div>
+            </section>
+
           </div>
+
         </div>
       </div>
     <script src="js/vendor/jquery.js"></script>
@@ -236,47 +255,63 @@
 
       $('#introductie').waypoint(function(direction) {
         $('[id$=nav]').css('font-weight','200'),
-        $('#introductie-nav').css('font-weight','900');
+        $('#introductie-nav').css('font-weight','900'),
+        $('[id$=nav]').css('border-bottom','0'),
+        $('#introductie-nav').css('border-bottom','2px solid #262626');
+
       }, {
         offset: '-20%'
       });
 
       $('#wo-ii').waypoint(function(direction) {
         $('[id$=nav]').css('font-weight','200'),
-        $('#wo-ii-nav').css('font-weight','900');
+        $('#wo-ii-nav').css('font-weight','900'),
+        $('[id$=nav]').css('border-bottom','0'),
+        $('#wo-ii-nav').css('border-bottom','2px solid #262626');
       }, {
-        offset: '0%'
+        offset: '5%'
       });
 
       $('#heden').waypoint(function(direction) {
         $('[id$=nav]').css('font-weight','200'),
-        $('#heden-nav').css('font-weight','900');
+        $('#heden-nav').css('font-weight','900'),
+        $('[id$=nav]').css('border-bottom','0'),
+        $('#heden-nav').css('border-bottom','2px solid #262626');
       }, {
-        offset: '10%'
+        offset: '5%'
       });
 
       $('#probleem').waypoint(function(direction) {
         $('[id$=nav]').css('font-weight','200'),
-        $('#probleem-nav').css('font-weight','900');
+        $('#probleem-nav').css('font-weight','900'),
+        $('[id$=nav]').css('border-bottom','0'),
+        $('#probleem-nav').css('border-bottom','2px solid #262626');
       }, {
         offset: '10%'
       });
 
       $('#oplossing').waypoint(function(direction) {
         $('[id$=nav]').css('font-weight','200'),
-        $('#oplossing-nav').css('font-weight','900');
+        $('#oplossing-nav').css('font-weight','900'),
+        $('[id$=nav]').css('border-bottom', '0'),
+        $('#oplossing-nav').css('border-bottom','2px solid #262626');
       }, {
-        offset: '10%'
+        offset: '-1%'
       });
 
       $('#benchmarking').waypoint(function(direction) {
         $('[id$=nav]').css('font-weight','200'),
-        $('#benchmarking-nav').css('font-weight','900');
+        $('#benchmarking-nav').css('font-weight','900'),
+        $('[id$=nav]').css('border-bottom','0'),
+        $('#benchmarking-nav').css('border-bottom','2px solid #262626');
       }, {
         offset: '30%'
       });
 
-      $('#introductie-nav').css('font-weight','900');
+      $(document).ready(function(){
+        $('#introductie-nav').css('font-weight','900');
+        $('#introductie-nav').css('border-bottom','2px solid #262626');
+      });
 
     </script>
   </body>
