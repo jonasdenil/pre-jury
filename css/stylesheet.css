@@ -86,11 +86,15 @@ p {
 }
 
 a,
-a:active, 
 a:link,
 a:visited {
 	color:#1492ED;
-	transition: opacity .1s ease, border .1s ease, font-weight .1s ease;
+	transition: opacity .1s ease, border-color .2s ease, font-weight .1s ease;
+}
+
+a:active, 
+a:hover {
+	color: #1492ED;
 }
 
 a:hover {
